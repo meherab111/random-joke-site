@@ -1,88 +1,78 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(13, 34, 43);
-    height: 100vh;
-    font-family: "Jost", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+  background-color: rgb(13, 34, 43);
+  height: 100vh;
+  font-family: "Jost", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-h2{
-    color: #ffffff;
-    font-size: 2rem;
-    letter-spacing: 1px;
+h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
-#main_div{
-    display: flex;
-    justify-content: center;
-    width: min(1480px, 100% - 4rem);
-    color: #ffffff;
-    padding-block: 5rem;
-    font-size: 2rem;
-    letter-spacing: 1.5px;
+#main-div {
+  display: flex;
+  justify-content: center;
+  width: min(1480px, 100% - 4rem);
+  color: #ffffff;
+  padding-block: 5rem;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
 }
 
-#next_btn{
+#next-btn {
+  cursor: pointer;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(45deg, #fa447b, #732ff1);
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  box-shadow: 2px 2px 2px 2px #000000;
+  transition: all 0.2s linear;
 
-    cursor: pointer;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(45deg, #fa447b, #732ff1);
-    padding: 1rem 2rem;
-    background-color: transparent;
-    color: #ffffff;
-    font-size: 1rem;
-    letter-spacing: 2px;
-    box-shadow: 2px 2px 2px 2px #000000;
-    transition: all 0.2s linear;
-    
-
-    &:hover{
-        background-color: #338199a9;
-    }
-
+  &:hover {
+    background-color: #338199a9;
+  }
 }
+
+/** Media Query */
 
 @media (max-width: 40em) {
-    h2{
+  h2 {
+    font-size: 1.5rem;
+  }
+  #main-div {
+    font-size: 1.5rem;
+  }
 
-        font-size: 1.5rem;
-    
-    }
-    #main_div{
-
-        font-size: 1.5rem;
-    }
-
-    #next_btn{
-
-        padding: 0.8rem 1.8rem;
-        font-size: 0.8rem;
-    }
+  #next-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 0.8rem;
+  }
 }
 @media (max-width: 30em) {
-    h2{
+  h2 {
+    font-size: 1.1rem;
+  }
+  #main-div {
+    font-size: 1.2rem;
+  }
 
-        font-size: 1.1rem;
-    
-    }
-    #main_div{
-
-        font-size: 1.2rem;
-    }
-
-    #next_btn{
-
-        padding: 0.7rem 1.7rem;
-        font-size: 0.7rem;
-    }
-
+  #next-btn {
+    padding: 0.7rem 1.7rem;
+    font-size: 0.7rem;
+  }
 }
