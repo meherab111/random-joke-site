@@ -63,6 +63,7 @@ h2 {
     font-size: 0.8rem;
   }
 }
+
 @media (max-width: 30em) {
   h2 {
     font-size: 1.1rem;
