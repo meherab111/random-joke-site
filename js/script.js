@@ -4,7 +4,7 @@ let nextBtn = document.getElementById("next-btn");
 
 const apiUrl = "https://icanhazdadjoke.com";
 
-// Api Fetch And Execute Functionality
+// Api Fetch And Execute Functionality.
 
 const apiData = async () => {
   try {
