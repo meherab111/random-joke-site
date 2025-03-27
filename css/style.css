@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: url("/images/custom-cursor.png"), auto;
 }
 
 h2 {
@@ -31,7 +32,7 @@ h2 {
 }
 
 #next-btn {
-  cursor: pointer;
+  cursor: url("/images/custom-cursor-hover.png"), auto;
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(45deg, #fa447b, #732ff1);
